@@ -37,9 +37,6 @@ function App() {
   const oneGuess = firstChoice !== null && secondChoice !== null;
 
   const handleClick = ({ index, value }: { index: number; value: number }) => {
-    console.log("index", index);
-    console.log("value", value);
-
     if (firstChoice === null) {
       setFirstChoice({ index, value });
       return;
